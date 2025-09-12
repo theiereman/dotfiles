@@ -1,0 +1,140 @@
+@import url("../../.cache/wal/colors-waybar.css");
+
+* {
+  font-size: 1rem;
+  font-family: "CodeNewRoman Nerd Font Propo";
+}
+
+window#waybar {
+  all: unset;
+  background: alpha(@background, 0.5);
+}
+
+#clock:hover,
+#network:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#power-profiles-daemon:hover,
+#custom-power:hover,
+#disk:hover {
+  transition: all 0.3s ease;
+  color: @color9;
+}
+#clock {
+  color: @color7;
+  transition: all 0.3s ease;
+}
+
+#clock,
+#network,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#power-profiles-daemon,
+#custom-power,
+#disk {
+  margin: 0px 5px;
+  color: @color7;
+}
+
+#power-profiles-daemon {
+  margin-right: 10px;
+}
+
+#workspaces {
+  padding: 0px 5px;
+}
+
+#workspaces button {
+  all: unset;
+  padding: 0px 5px;
+  color: alpha(@color8, 0.4);
+}
+
+#workspaces button:hover {
+  color: @color9;
+  border: none;
+  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+#workspaces button.active {
+  color: @color7;
+  border: none;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+#workspaces button.empty {
+  color: rgba(0, 0, 0, 0);
+  border: none;
+  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.empty:hover {
+  color: rgba(0, 0, 0, 0);
+  border: none;
+  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
+}
+
+#workspaces button.empty.active {
+  color: @color9;
+  border: none;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+#network {
+  transition: all 0.3s ease;
+  color: @color7;
+}
+
+#cpu,
+#memory,
+#temperature {
+  transition: all 0.3s ease;
+  color: @color7;
+}
+
+#pulseaudio-slider slider {
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+  background-color: @color7;
+}
+#pulseaudio-slider trough {
+  min-height: 10px;
+  min-width: 100px;
+  border-radius: 5px;
+  background-color: @color1;
+}
+#pulseaudio-slider highlight {
+  min-width: 10px;
+  border-radius: 5px;
+  background-color: @color7;
+}
+
+#power-profiles-daemon {
+  transition: all 0.3s ease;
+  color: @color7;
+}
+
+#pulseaudio {
+  min-width: 2em;
+  margin-left: 10px;
+  color: @color7;
+}
+
+#custom-power {
+  margin: 0px 10px;
+  color: @color7;
+}
+
+#custom-media {
+  margin: 0px 10px;
+  color: @color7;
+}
