@@ -8,7 +8,7 @@
     "pulseaudio/slider",
     "custom/media"
   ],
-  "modules-center": ["clock"],
+  "modules-center": ["clock", "custom/weather"],
   "modules-right": [
     "disk",
     "network",
@@ -20,6 +20,11 @@
 
   "disk": {
     "format": "[ DISK: {free} free ]"
+  },
+  "custom/weather": {
+    "exec": "~/.config/waybar/scripts/weather.py waybar",
+    "restart-interval": 900,
+    "return-type": "json"
   },
   "custom/media": {
     "format": "{}",
